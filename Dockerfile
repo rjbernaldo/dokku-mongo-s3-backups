@@ -5,6 +5,7 @@ RUN echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.6 main" | 
 RUN apt-get update -y && \ 
     apt-get install -y mongodb-org
 
+RUN mkdir -p /srv
 WORKDIR /srv/app
 COPY package*.json ./
 RUN npm install
