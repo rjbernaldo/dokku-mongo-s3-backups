@@ -6,3 +6,5 @@ schedule.scheduleJob('0 0 1 * *', () => {
   console.log('Backing up db');
   backup();
 });
+
+backup();
